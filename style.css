@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.container {
+  width: 600px;
+  height: 450px;
+  box-shadow: 4px 7px 22px 9px rgba(0, 0, 0, 0.48);
+  display: flex;
+  border-radius: 10px;
+}
+
+.container_imagen {
+  width: 50%;
+}
+
+.container_imagen img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container_testo {
+  width: 50%;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+}
+
+.container_testo_perfume {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.container_testo h1 {
+  font-family: "Fraunces", serif;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.container_testo_main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: hsl(228, 12%, 48%);
+}
+
+.container_testo_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Fraunces", serif;
+}
+
+.actualPrice {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+}
+
+.container_testo_row span {
+  text-decoration: line-through;
+  font-size: 15px;
+  margin-left: 20px;
+  color: hsl(228, 12%, 48%);
+}
+
+.container_testo button {
+  width: 100%;
+  padding: 15px 40px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container_testo button svg {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: hsl(158, 37%, 19%);
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 320px;
+    height: 700px;
+    flex-direction: column;
+  }
+
+  .container_imagen {
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .container_imagen img {
+    content: url("./images/image-product-mobile.jpg");
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 0;
+  }
+
+  .container_testo {
+    width: 100%;
+    height: 60%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
